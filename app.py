@@ -101,29 +101,8 @@ if st.button("Predict House Price"):
     # Display result
     st.success(f"🏷 Predicted House Price: Rs. {round(predicted_price[0], 2)}")
 
-    # Formula Explanation
-    st.subheader("📘 Linear Regression Formula")
+  
 
-    st.latex(r'''
-    y = m_1x_1 + m_2x_2 + c
-    ''')
-
-    st.write("""
-    Where:
-
-    - y = Predicted House Price
-    - x₁ = Area
-    - x₂ = Location
-    - m₁, m₂ = Coefficients
-    - c = Intercept
-    """)
-
-# ---------------------------------------------------
-# SHOW DATASET
-# ---------------------------------------------------
-
-with st.expander("📊 View Dataset"):
-    st.dataframe(data)
 
 # ---------------------------------------------------
 # FOOTER
